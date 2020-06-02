@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Evaluation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+* {
+  box-sizing: border-box;
+}
+
+
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+</style>
+<body>
+ <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-teal w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">MAIN PAGE</a>
+    <a href="studentschedule.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PERFORMANCE</a>
+    <a href="groupschedule.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SCHEDULES</a>
+    <a href="evaluate.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EVALUATION</a>
+    <a href="calculator.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GPA CALCULATOR</a>
+    <a href="masters.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MASTERS REGISTRATION</a>
+    <a href="services.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICES</a>
+    </div>
+    
+  </div>
+</div>
+   
+    <script>
+      // Automatic Slideshow - change image every 4 seconds
+      
+      
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      
+      </script>
+      <!-- page content-->
+    <div class="w3-white" id="tour">
+      <div class="w3-padding-64 w3-white w3-container w3-content" style="max-width:800px"></div> 
+
+       <!-- Evaluate course -->
+      
+       <div class="w3-padding-64 w3-teal w3-container w3-content w3-text-light-grey" style="max-width:800px">
+          <p><b>Evaluate course</b></p>
+          <div class="dropdown">
+              <button class="btn w3-white btn-block dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Choose course
+              </button>
+          <div class="dropdown-menu btn-block text-center" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">CSEN 601</a>
+          <a class="dropdown-item" href="#">CSEN 602</a>
+          <a class="dropdown-item" href="#">CSEN 603</a>
+          </div>
+          </div>  
+          <p><b>  </b></p> 
+          <button type="button" class="btn w3-light-grey" onclick="document.getElementById('group1').style.display='block'">Evaluate course</button>
+          
+      </div>   
+
+      <!-- Evaluate Staff -->
+      
+      <div class="w3-padding-64 w3-teal w3-container w3-content w3-text-light-grey" style="max-width:800px">
+        <p><b>Evaluate staff</b></p>
+        <div class="dropdown">
+            <button class="btn w3-white btn-block dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Choose staff member
+            </button>
+        <div class="dropdown-menu btn-block text-center" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">TA 1</a>
+        <a class="dropdown-item" href="#">TA 2</a>
+        <a class="dropdown-item" href="#">Dr 1</a>
+        </div>
+        </div>   
+        <p><b>  </b></p> 
+        <button type="button" class="btn w3-light-grey" onclick="document.getElementById('group1').style.display='block'">Evaluate course</button>
+        
+    </div>   
+
+      <!-- onclick functions-->
+
+      <div id="group1" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-blue w3-center w3-padding-32"> 
+                <span onclick="document.getElementById('group1').style.display='none'" 
+                   class="w3-button w3-blue w3-xlarge w3-display-topright">×</span>
+                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Evaluation</h2>
+                  </header>
+                  <div class="w3-container">
+                    <div class="w3-padding-64 w3-white w3-container w3-content" style="max-width:800px" id="sched">
+            
+                      <span class="heading">Student Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <p>4.1 average based on 254 reviews.</p>
+                      <hr style="border:3px solid #f1f1f1">
+                      
+                      <div class="row">
+                        <div class="side">
+                          <div>5 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-5"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>150</div>
+                        </div>
+                        <div class="side">
+                          <div>4 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-4"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>63</div>
+                        </div>
+                        <div class="side">
+                          <div>3 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-3"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>15</div>
+                        </div>
+                        <div class="side">
+                          <div>2 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-2"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>6</div>
+                        </div>
+                        <div class="side">
+                          <div>1 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-1"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>20</div>
+                        </div>
+                      </div>      
+                     
+                </div> 
+                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('group1').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    
+                  </div>
+        </div>
+    </div>       
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

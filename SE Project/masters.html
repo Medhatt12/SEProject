@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Masters</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {font-family: "Lato", sans-serif}
+    .mySlides {display: none}
+    .contain {object-fit: contain;}
+    .styled select {
+      background: transparent;
+      width: 150px;
+      font-size: 16px;
+      border: 1px solid #CCC;
+      height: 34px;
+    }
+    .styled {
+      margin: 50px;
+      width: 120px;
+      height: 34px;
+      border: 1px solid #111;
+      border-radius: 3px;
+      overflow: hidden;
+      background: url(http://www.stackoverflow.com/favicon.ico) 96% / 20% no-repeat #EEE;
+    }
+    #outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-teal w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">MAIN PAGE</a>
+      <a href="studentschedule.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PERFORMANCE</a>
+      <a href="groupschedule.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SCHEDULES</a>
+      <a href="evaluate.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EVALUATION</a>
+      <a href="calculator.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GPA CALCULATOR</a>
+      <a href="masters.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MASTERS REGISTRATION</a>
+      <a href="services.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICES</a>
+      </div>
+      
+    </div>
+  </div>
+  <div class="w3-white" id="tour">
+    <div class="w3-padding-64 w3-white w3-container w3-content" style="max-width:800px"></div> 
+
+    <div class="w3-padding-64 w3-teal w3-container w3-content w3-text-light-grey" style="max-width:800px">
+        <p><b>Pick a topic</b></p>
+         
+        <button type="button" class="btn btn-block w3-light-grey" onclick="document.getElementById('group1').style.display='block'">View topics</button>
+        <p><b>   </b></p>
+        <button class=" btn w3-white dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Choose topic number </button>
+            <div class=" dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">51</a>
+                <a class="dropdown-item" href="#">52</a>
+                <a class="dropdown-item" href="#">53</a>
+                <a class="dropdown-item" href="#">54</a>
+                <a class="dropdown-item" href="#">55</a>
+                <a class="dropdown-item" href="#">56</a>
+            </div>
+            <p><b>   </b></p>
+            <button type="button" class="btn  w3-light-grey" onclick="document.getElementById('group2').style.display='block'">Submit</button>    
+    </div>   
+   
+
+  </div>  
+
+
+   <!-- popups for schedules -->
+   <div id="group1" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-blue w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('group1').style.display='none'" 
+       class="w3-button w3-blue w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Group 1 Schedule</h2>
+      </header>
+      <div class="w3-container">
+        <img src="topics.png" class="contain" style="width:880px;">
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('group1').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        
+      </div>
+    </div>
+  </div>
+
+  <div id="group2" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-blue w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('group2').style.display='none'" 
+       class="w3-button w3-blue w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Success</h2>
+      </header>
+      <div class="w3-container">
+        
+      </div>
+    </div>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
